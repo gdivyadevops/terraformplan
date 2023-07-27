@@ -15,5 +15,6 @@ terraform {
     key    = "terraform-state/terraform.tfstate"
     region = "ap-south-1"
     # Other optional configurations (e.g., encrypt, dynamodb_table, profile, role_arn, etc.)
+    dynamodb_table = "terraform-state-lock"
   }
 }
