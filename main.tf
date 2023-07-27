@@ -9,3 +9,11 @@ instance_type = "t2.micro"
     Name = "terraform-jenkins12"
   }
 }
+terraform {
+  backend "s3" {
+    bucket = "terraform-s3-backend2707"
+    key    = "terraform-state/"
+    region = "ap-south-1"
+    # Other optional configurations (e.g., encrypt, dynamodb_table, profile, role_arn, etc.)
+  }
+}
