@@ -12,7 +12,7 @@ instance_type = "t2.micro"
 terraform {
   backend "s3" {
     bucket = "terraform-s3-backend2707"
-    key    = "terraform-state/"
+    key    = "terraform-state/terraform.tfstate"
     region = "ap-south-1"
     # Other optional configurations (e.g., encrypt, dynamodb_table, profile, role_arn, etc.)
   }
